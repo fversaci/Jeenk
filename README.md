@@ -39,6 +39,12 @@ configure and run Jeenk tools.
 
 To setup Flink and Kafka clusters, see the projects' documentation.
 
+## Docker container
+
+This repository also includes a [Dockerfile](Dockerfile), based on
+Ubuntu 20.04, which includes Java 8, Flink 1.4, and Kafka 2.1.1 to
+easily set up a running system.
+
 ## License
 
 Jeenk is free software: you can redistribute it and/or modify it under
