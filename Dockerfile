@@ -61,11 +61,11 @@ RUN \
 ########################################################################
 # install apache kafka
 ########################################################################
-ARG FLINK_VERS=2.1.1
+ARG KAFKA_VERS=2.1.1
 RUN \
-    cd /tmp && wget -nv "https://archive.apache.org/dist/kafka/$FLINK_VERS/kafka_2.11-$FLINK_VERS.tgz" \
-    && cd /opt/ && tar xfz "/tmp/kafka_2.11-$FLINK_VERS.tgz" \
-    && ln -s "kafka_2.11-$FLINK_VERS" kafka
+    cd /tmp && wget -nv "https://archive.apache.org/dist/kafka/$KAFKA_VERS/kafka_2.11-$KAFKA_VERS.tgz" \
+    && cd /opt/ && tar xfz "/tmp/kafka_2.11-$KAFKA_VERS.tgz" \
+    && ln -s "kafka_2.11-$KAFKA_VERS" kafka
 
 ########################################################################
 # update PATH
